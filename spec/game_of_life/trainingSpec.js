@@ -31,6 +31,21 @@ describe("Game Of Life", function(){
 			expect(e instanceof TypeError).toBe(true);
 		}
 	})
+
+	it("should fail if columns are not set as numbers and smaller than one", function(){
+		try {
+			let gameOfLife = new GameOfLife(8,"blabla");
+		}
+		catch(e) {
+			expect(e instanceof TypeError).toBe(true);
+		}
+		try {
+			let gameOfLife = new GameOfLife(4,0);
+		}
+		catch(e) {
+			expect(e instanceof TypeError).toBe(true);
+		}
+	})
 })
 
 
