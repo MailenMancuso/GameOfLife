@@ -24,7 +24,13 @@ describe("Game Of Life", function(){
 		catch(e) {
 			expect(e instanceof TypeError).toBe(true);
 		}
-	})	
+		try {
+			let gameOfLife = new GameOfLife(0,9);
+		}
+		catch(e) {
+			expect(e instanceof TypeError).toBe(true);
+		}
+	})
 })
 
 
