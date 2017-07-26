@@ -1,7 +1,7 @@
-var gameOfLife = require('../../lib/gameOfLife');
+var gameOfLife = require('../../lib/GameOfLife');
 
 describe("Game Of Life", function(){
 	it("should be a function", function(){
-		expect(typeof gameOfLife).to.equal("function");
+		expect(typeof gameOfLife).toBe("function");
 	})	
 })
